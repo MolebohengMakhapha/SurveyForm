@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1
+        id="title"
+        style="text-align: center; padding: 0 10px; margin-bottom: 30px"
+      >
+        Mental Health Check Form
+      </h1>
+      <p id="description" style="text-align: center; text-align: center">
+        Please complete all information on this form and bring it to your next
+        visit
+      </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input type="number" name="age" id="number" placeholder="Age" />
+        </div>
+        <div class="form-group">
+          <p>
+            In the past month, how much of the time were you a happy person?
+          </p>
+          <label>
+            <input
+              name="calm"
+              value="none-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            All of the time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="most-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            Most of the time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="a-good-bit-of-time"
+              type="radio"
+              class="input-radio"
+            />
+            A good bit of time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="none-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            None of the time
+          </label>
+        </div>
+        <div class="form-group">
+          <p>
+            How much of the time, in the past month have you felt calm and
+            peaceful?
+          </p>
+          <label>
+            <input
+              name="calm"
+              value="none-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            All of the time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="most-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            Most of the time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="a-good-bit-of-time"
+              type="radio"
+              class="input-radio"
+            />
+            A good bit of time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="none-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            None of the time
+          </label>
+        </div>
+        <div class="form-group">
+          <p>
+            How much of the time in the past month, have you felt downhearted?
+          </p>
+          <label>
+            <input
+              name="calm"
+              value="none-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            All of the time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="most-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            Most of the time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="a-good-bit-of-time"
+              type="radio"
+              class="input-radio"
+            />
+            A good bit of time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="none-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            None of the time
+          </label>
+        </div>
+        <div class="form-group">
+          <p>
+            How much of the time, in the past month have you felt calm and
+            peaceful?
+          </p>
+          <label>
+            <input
+              name="calm"
+              value="none-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            All of the time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="most-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            Most of the time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="a-good-bit-of-time"
+              type="radio"
+              class="input-radio"
+            />
+            A good bit of time
+          </label>
+          <label>
+            <input
+              name="calm"
+              value="none-of-the-time"
+              type="radio"
+              class="input-radio"
+            />
+            None of the time
+          </label>
+        </div>
+        <div class="form-group">
+          <p>How are you feeling today?</p>
+          <select id="dropdown" name="feeling" required>
+            <option disabled selected value>Select an option</option>
+            <option value="happy">Happy</option>
+            <option value="angry">Projects</option>
+            <option value="depressed">Community</option>
+            <option value="excited">Excited</option>
+            <option value="surprised">Open Source</option>
+            <option value="sad">Sad</option>
+            <option value="lonely">Lonely</option>
+            <option value="exhausted">Exhausted</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Current Symptoms Checklist:
+            <span class="clue">(Check any symptoms present)</span>
+          </p>
+          <label>
+            <input
+              name="symptoms"
+              value="excessive-worry"
+              type="checkbox"
+              class="input-checkbox"
+            />Excessive worry</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="forgetfullness"
+              type="checkbox"
+              class="input-checkbox"
+            />Forgetfulness</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="change-in-appetite"
+              type="checkbox"
+              class="input-checkbox"
+            />Change in appetite</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="loss-of-interest"
+              type="checkbox"
+              class="input-checkbox"
+            />Loss of interest</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="decreased-libido"
+              type="checkbox"
+              class="input-checkbox"
+            />Decreased libido</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="sleep-pattern-disturbance"
+              type="checkbox"
+              class="input-checkbox"
+            />Sleep pattern disturbance</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="fatigue"
+              type="checkbox"
+              class="input-checkbox"
+            />Fatigue</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="suspiciousness"
+              type="checkbox"
+              class="input-checkbox"
+            />Impulsivity</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="racing-thoughts"
+              type="checkbox"
+              class="input-checkbox"
+            />Racing thoughts</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="avoidance"
+              type="checkbox"
+              class="input-checkbox"
+            />Avoidance</label
+          >
+          <label>
+            <input
+              name="symptoms"
+              value="suspiciousness"
+              type="checkbox"
+              class="input-checkbox"
+            />Suspiciousness</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What are the problems for which you are seeking help?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Type here..."
+          >
+          </textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
